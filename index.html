@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="image/logo.png">
+    <title>Restore</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container"  >
+            <div class="logo">
+                <a href="#"><img src="image/logo.png" alt="icon"></a>
+            </div>
+            <span class="material-symbols-outlined menu-btn" onclick="toggleNav()">
+                menu
+            </span>
+            <nav>
+                <a href="#" target="_self">Home</a>
+                <a href="#about" target="_self">About</a>
+                <a href="#service" target="self">Service</a>
+                <a href="#contacts" target="_self">Contacts</a>
+            </nav>
+        </div>
+    </header>
+    <!-- banner -->
+    <section class="banner" id="home">
+        <div data-aos="fade-right" data-aos-duration="3000"  >  
+
+            <div class="container" >
+                <h1 >Fast Reparing Services</h1>
+                <p >Any kinds of digital device problem you need fixed. We can help! Check out our digital device
+                    repair services to find more information of what exactly we provide and if it suites your needs
+                </p>
+                <a class="btn" href="">Contact Us</a>
+            </div> 
+            </div>
+        </div>
+    </section>
+    <!--about  -->
+    <section class="about">
+        <div class="container" id="about">
+            <h2>About Us</h2>
+
+            <div class="wrap">
+                <div class="content" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="abouth3">
+                        <h3><span class="span">22</span><span class="span2">YEARS OF EXPERIENCE IN DIGITAL DEVICE
+                                REPAIR SERVICES</span></h3>
+                    </div>
+                    <div class="aboutp">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam labore aliquid magni?
+                            Recusandae itaque nam voluptatum, perspiciatis laudantium, cum asperiores molestias
+                            temporibus distinctio dolorum repellendus iste necessitatibus optio doloremque.
+                            <span id="readMoreContent"> <br> Lorem ipsum
+                                dolorsit amet consectetur adipisicing elit. Quis doloremque suscipit sunt qui harum
+                                quisquam cumque voluptate provident enim cum repellendus incidunt
+                                quidem, vitae exercitationem sed quia tempora
+                                quas </span>
+                        </p>
+                        <span class="readmore_btn" onclick="readmore()">ReadMore</a>
+                    </div>
+                </div>
+                <div class="image" data-aos="fade-up-left" data-aos-duration="3000">
+                    <img src="image/abtimg.png" alt="a man reparing ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service -->
+    <section class="service" id="service">
+        <h2>Our Sevices</h2>
+        <div class="container" >
+            <div class="content" data-aos="zoom-in" data-aos-duration="3500">
+                <div class="img"><img src="image/desk.png" alt="compter"></div>
+                <div class="details">
+                    <h4>REPAIR COMPUTER</h4>
+                    <p>Our helpful, friendly and A+ Certified Technicians are ready to take care of your valuable
+                        Computer</p>
+
+                </div>
+            </div>
+            <div class="content" data-aos="zoom-in" data-aos-duration="3500">
+                <div class="img"><img src="image/mob.png" alt="compter"></div>
+                <div class="details">
+                    <h4>REPAIR MOBAIL</h4>
+                    <p>Our helpful, friendly and A+ Certified Technicians are ready to take care of your valuable
+                        Computer</p>
+
+                </div>
+            </div>
+            <div class="content" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="img"><img src="image/tab.png" alt="compter"></div>
+                <div class="details">
+                    <h4>REPAIR TABLET</h4>
+                    <p>Our helpful, friendly and A+ Certified Technicians are ready to take care of your valuable
+                        Computer</p>
+
+                </div>
+            </div>
+            <div class="content" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="img"><img src="image/lap.png" alt="compter"></div>
+                <div class="details">
+                    <h4>REPAIR LAPTOP</h4>
+                    <p>Our helpful, friendly and A+ Certified Technicians are ready to take care of your valuable
+                        Computer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2>Contacts</h2>
+            <div class="wrap" data-aos="zoom-in" data-aos-duration="3000">
+                <form id="myForm" onsubmit="return validateForm()">
+                    <div class="inp-wrap">
+                        <div class="name">
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname">
+                            <div id="nameError" class="error"></div>
+
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname">
+
+                        </div>
+                    </div>
+                    <div class="inp-wrap">
+                        <div class="cont">
+                            <label for="mobil">MOBILE NUMBER</label>
+                            <input type="tel" id="mobil">
+                        </div>
+                        <div>
+                            <label for="email">EMAIL ADDRESS</label>
+                            <input type="email" id="email">
+                            <div id="emailError" class="error"></div>
+
+                        </div>
+                    </div>
+                    <div class="inp-wrap3">
+                        <label for="comment">MESSAGE</label>
+                        <textarea name="comment" id="comment" rows="10"></textarea>
+                    </div>
+                    <div class="inp-btn">
+                        <input type="button" value="Submit" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container" data-aos="zoom-in" data-aos-duration="3000">
+            <a href="#"><img src="image/logo.png" alt="" class="logo"></a>
+            <div class="content">
+                <div class="card1">
+                    <p>Pharetra pharetra massa massa ultricies mi quis hendrerit in fermentum posuere urna nec
+                        tincidunt. pharetra massa massa ultricies mi quis hendrerit. In fermentum</p>
+                </div>
+                <div class="card2">
+                    <p class="foot-para">Services</p>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#service">Service</a>
+                    <a href="#contacts">Contacts</a>
+                </div>
+                <div class="card3">
+                    <p class="foot-para">Shop Info</p>
+                    <div class="wrap">
+                        <a href="#"><img src="image/location.png" alt=" location"></a>
+                        <p>Mavoor Road, calicut, 673661</p>
+                    </div>
+                    <div class="wrap">
+                        <a href="#"><img src="image/phone.png" alt="phone"></a>
+                        <p>9072486726</p>
+                    </div>
+                    <div class="wrap">
+                        <a href="#"><img src="image/mail.png" alt=" mail"></a>
+                        <p>restore2001@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2024 restore.All right reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function readmore() {
+            var content = document.getElementById('readMoreContent');
+            var btn = document.getElementsByClassName('readmore_btn')[0];
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                btn.innerHTML = 'Read Less';
+            } else {
+                content.style.display = 'none';
+                btn.innerHTML = 'Read More';
+            }
+        }
+    </script>
+    <script>
+        function validateForm() {
+            // Get form inputs
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            // Reset error messages
+            document.getElementById('nameError').innerHTML = '';
+            document.getElementById('emailError').innerHTML = '';
+            // Validate name
+            // if (name === '') {
+            //     document.getElementById('nameError').innerHTML = 'Name is required';
+            //     return false;
+            // }
+            // Validate email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (name === '' && !emailRegex.test(email)) {
+                document.getElementById('emailError').innerHTML = 'Invalid email address';
+                document.getElementById('nameError').innerHTML = 'Name is required';
+                return false;
+            }
+            // Form is valid, allow submission
+            return true;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+
+</html>
